@@ -1,0 +1,666 @@
+/* ================================
+   Syndeo Studio - Custom Styles
+   Premium Social Media Marketing Agency
+   ================================ */
+
+/* CSS Variables for Color Palette */
+:root {
+    /* Dark Theme Colors */
+    --dark-primary: #0f0f16;
+    --dark-secondary: #1a1a24;
+    --dark-tertiary: #20202e;
+    
+    /* Light Theme Colors */
+    --light-primary: #93a0ad;
+    --light-secondary: #64748b;
+    
+    /* Accent Colors */
+    --accent-primary: #371586;
+    --accent-secondary: #4a4cb3;
+    --accent-gradient: linear-gradient(135deg, #371586 0%, #4a4cb3 100%);
+    
+    /* Neutral Colors */
+    --white: #ffffff;
+    --black: #000000;
+}
+
+/* Font Families */
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Custom Gradient Text */
+.gradient-text {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Gradient Background */
+.gradient-bg {
+    background: var(--accent-gradient);
+}
+
+/* ================================
+   Navigation Styles
+   ================================ */
+
+.nav-link {
+    position: relative;
+    color: var(--light-secondary);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 0;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #000000;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-gradient);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* ================================
+   Button Styles
+   ================================ */
+
+.btn-primary {
+    background: var(--accent-gradient);
+    color: var(--white);
+    padding: 0.875rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 14px rgba(139, 92, 246, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--dark-primary);
+    padding: 0.875rem 2rem;
+    border: 2px solid var(--dark-primary);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background: var(--dark-primary);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.btn-white {
+    background: var(--white);
+    color: var(--accent-primary);
+    padding: 0.875rem 2.5rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 14px rgba(255, 255, 255, 0.2);
+}
+
+.btn-white:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* ================================
+   Service Cards
+   ================================ */
+
+.service-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    width: 4rem;
+    height: 4rem;
+    background: var(--accent-gradient);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+/* ================================
+   Feature Cards
+   ================================ */
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--accent-gradient);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover::before {
+    transform: scaleX(1);
+}
+
+.feature-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-4px);
+}
+
+.feature-number {
+    font-size: 3rem;
+    font-weight: 700;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+/* ================================
+   Statistics Cards
+   ================================ */
+
+.stats-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* ================================
+   Mission & Vision Cards
+   ================================ */
+
+.mission-vision-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.mission-vision-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-primary);
+}
+
+/* ================================
+   Approach Cards
+   ================================ */
+
+.approach-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 2rem;
+    border-left: 4px solid var(--accent-primary);
+    transition: all 0.3s ease;
+}
+
+.approach-card:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    transform: translateX(8px);
+}
+
+.approach-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-primary);
+    opacity: 0.2;
+    min-width: 80px;
+}
+
+/* ================================
+   Detailed Service Cards
+   ================================ */
+
+.detailed-service-card {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.detailed-service-card:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-badge {
+    display: inline-block;
+    background: var(--accent-gradient);
+    color: var(--white);
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.service-image-placeholder {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 1rem;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #cbd5e1;
+}
+
+/* ================================
+   Portfolio Styles
+   ================================ */
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.portfolio-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    aspect-ratio: 4/5;
+}
+
+.portfolio-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #cbd5e1;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.95) 0%, rgba(99, 102, 241, 0.95) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-overlay-content {
+    text-align: center;
+    color: var(--white);
+    padding: 2rem;
+}
+
+/* Video Showcase */
+.video-showcase-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.video-showcase-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateY(-4px);
+}
+
+.video-placeholder {
+    background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(99, 102, 241, 0.1) 100%);
+    border-radius: 1rem;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgba(139, 92, 246, 0.3);
+}
+
+.video-badge {
+    display: inline-block;
+    background: rgba(139, 92, 246, 0.2);
+    color: var(--accent-primary);
+    padding: 0.5rem 1.25rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.tag {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--light-secondary);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Result Cards */
+.result-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.result-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* ================================
+   Contact Page Styles
+   ================================ */
+
+.contact-info-card {
+    display: flex;
+    align-items: start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: 1rem;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transform: translateX(8px);
+}
+
+.contact-icon {
+    width: 3rem;
+    height: 3rem;
+    background: var(--accent-gradient);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.contact-info-card:hover .contact-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.contact-label {
+    font-size: 0.875rem;
+    color: var(--light-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.contact-value {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--dark-primary);
+    transition: color 0.3s ease;
+}
+
+.contact-value:hover {
+    color: var(--accent-primary);
+}
+
+.contact-form-container {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    color: var(--dark-primary);
+    margin-bottom: 0.5rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: var(--white);
+    color: var(--dark-primary);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+.social-icon {
+    width: 3rem;
+    height: 3rem;
+    background: rgba(139, 92, 246, 0.1);
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-primary);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: var(--accent-gradient);
+    color: var(--white);
+    transform: translateY(-4px);
+}
+
+/* ================================
+   Animation Utilities
+   ================================ */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.fade-in-left {
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+.fade-in-right {
+    animation: fadeInRight 0.8s ease-out;
+}
+
+/* Scroll Animations - Applied via JavaScript */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.scroll-animate.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================================
+   Responsive Design
+   ================================ */
+
+@media (max-width: 768px) {
+    .service-card,
+    .feature-card,
+    .stats-card,
+    .detailed-service-card {
+        padding: 1.5rem;
+    }
+    
+    .approach-card {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .approach-number {
+        font-size: 2rem;
+    }
+    
+    .contact-form-container {
+        padding: 2rem;
+    }
+    
+    .video-showcase-card {
+        padding: 2rem;
+    }
+}
+
+/* ================================
+   Custom Scrollbar
+   ================================ */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-gradient);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+}
+
+/* ================================
+   Smooth Scrolling
+   ================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ================================
+   Selection Color
+   ================================ */
+
+::selection {
+    background: var(--accent-primary);
+    color: var(--white);
+}
+
+::-moz-selection {
+    background: var(--accent-primary);
+    color: var(--white);
+}

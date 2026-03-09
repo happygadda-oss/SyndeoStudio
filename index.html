@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syndeo Studio - Premium Social Media Marketing Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="'./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter bg-dark-primary text-light-primary">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-dark-primary/95 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="index.html" class="text-2xl font-playfair font-bold gradient-text">
+                    Syndeo Studio
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    
+                    <a href="contact.html" class="btn-primary">Contact Us</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-light-primary" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <div class="px-6 pt-2 pb-6 space-y-4 bg-dark-secondary/95 backdrop-blur-md border-t border-white/5">
+                <a href="index.html" class="block nav-link active">Home</a>
+                <a href="about.html" class="block nav-link">About</a>
+                <a href="services.html" class="block nav-link">Services</a>
+                <a href="portfolio.html" class="block nav-link">Portfolio</a>
+                <a href="contact.html" class="block nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+        <!-- Gradient Background -->
+        <div class="absolute inset-0 gradient-bg opacity-30"></div>
+        
+        <!-- Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <div class="fade-in-up">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-playfair font-bold mb-6 leading-tight">
+                    Elevate Your<br>
+                    <span class="gradient-text">Social Presence</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-light-secondary mb-10 max-w-3xl mx-auto">
+                    Premium social media marketing services crafted with precision, executed with excellence, delivered with dedication.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="portfolio.html" class="btn-primary text-lg">View Our Work</a>
+                    <a href="contact.html" class="btn-secondary text-lg">Start Your Journey</a>
+                </div>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <svg class="w-6 h-6 text-accent-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="py-24 bg-light-primary">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <span class="text-accent-primary text-sm font-semibold tracking-wider uppercase">What We Do</span>
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold text-dark-primary mt-4 mb-6">
+                    Our Expertise
+                </h2>
+                <p class="text-lg text-dark-secondary max-w-2xl mx-auto">
+                    Comprehensive social media marketing solutions tailored to amplify your brand's digital footprint.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card group">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark-primary mb-3 group-hover:text-accent-primary transition-colors">Poster Design</h3>
+                    <p class="text-dark-secondary">Eye-catching visuals that captivate and convert your audience.</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card group">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark-primary mb-3 group-hover:text-accent-primary transition-colors">Video Editing</h3>
+                    <p class="text-dark-secondary">Professional video content that tells your brand's story.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card group">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark-primary mb-3 group-hover:text-accent-primary transition-colors">SEO Optimization</h3>
+                    <p class="text-dark-secondary">Strategic optimization to boost your online visibility.</p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card group">
+                    <div class="service-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-dark-primary mb-3 group-hover:text-accent-primary transition-colors">Organic Growth</h3>
+                    <p class="text-dark-secondary">Sustainable strategies for authentic audience engagement.</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="services.html" class="btn-secondary">Explore All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="py-24 bg-dark-primary relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in-up">
+                <span class="text-accent-primary text-sm font-semibold tracking-wider uppercase">The Syndeo Difference</span>
+                <h2 class="text-4xl md:text-5xl font-playfair font-bold text-light-primary mt-4 mb-6">
+                    Why Choose Us
+                </h2>
+                <p class="text-lg text-light-secondary max-w-2xl mx-auto">
+                    We don't just deliver services—we deliver excellence, dedication, and measurable results.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3 class="text-2xl font-semibold mb-4">Premium Quality</h3>
+                    <p class="text-light-secondary">
+                        Every project receives our full attention with meticulous attention to detail and professional execution that sets industry standards.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3 class="text-2xl font-semibold mb-4">100% Dedication</h3>
+                    <p class="text-light-secondary">
+                        We treat your brand as our own, investing complete effort and commitment to ensure exceptional outcomes every single time.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3 class="text-2xl font-semibold mb-4">Complete Solutions</h3>
+                    <p class="text-light-secondary">
+                        From strategy to execution, we handle everything under social media marketing with seamless integration and expert coordination.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-gradient-to-br from-accent-primary to-accent-secondary">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-playfair font-bold gradient-text mb-6">
+                Ready to Transform Your Social Presence?
+            </h2>
+            <p class="text-xl gradient-text mb-10">
+                Let's collaborate and create something extraordinary together.
+            </p>
+            <a href="contact.html" class="btn-white text-lg">Get Started Today</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-secondary py-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-playfair font-bold gradient-text mb-4">Syndeo Studio</h3>
+                    <p class="text-light-secondary mb-4">
+                        Premium social media marketing agency delivering excellence, one project at a time.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold text-light-primary mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="text-light-secondary hover:text-accent-primary transition-colors">About</a></li>
+                        <li><a href="services.html" class="text-light-secondary hover:text-accent-primary transition-colors">Services</a></li>
+                        
+                        <li><a href="contact.html" class="text-light-secondary hover:text-accent-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold text-light-primary mb-4">Connect</h4>
+                    <ul class="space-y-2 text-light-secondary">
+                        <li>Email: syndeostudio@gmail.com</li>
+                        <li>Phone: 6361350940 , 8971131388</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-8 text-center text-light-secondary">
+                <p>&copy; 2026 Syndeo Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
